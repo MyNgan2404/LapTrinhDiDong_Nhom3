@@ -1,3 +1,7 @@
+Lập trình di động- Nhóm 3
+Lê Thị Mỹ Ngân
+Mã SV: 18T1021195
+
 # demo
 
 A new Flutter project.
