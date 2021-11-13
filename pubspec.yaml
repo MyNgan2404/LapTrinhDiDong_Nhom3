@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   english_words: ^4.0.0
   http:
+  carousel_slider: ^4.0.0
+  #flutter_rating_stars: ^1.0.3+4
+  webview_flutter: ^2.3.0
+
 
 dev_dependencies:
   flutter_test:

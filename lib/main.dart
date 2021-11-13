@@ -1,43 +1,24 @@
-import 'package:flutter/cupertino.dart';
+import 'package:demo/services/art_services.dart';
+import 'package:demo/view/news_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/myapp3.dart';
-import 'login.dart';
-import 'myapp4.dart';
-import 'BTCungCo.dart';
-
 
 void main() {
-  runApp(BaiTap());
+  runApp(const MyApp());
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-/*Widget creatColumn (String data, IconData icon, Color color, double size){
-  return Column(
-    children: [
-      Icon(Icons.call, color: Colors.red, size:30,textDirection: TextDirection.ltr,),
-      Text("Call", textDirection: TextDirection.ltr,style: TextStyle(color: Colors.red),)
-  ],
-  );
-  }*/
-  // This widget is the root of your application.
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-     decoration: BoxDecoration(),
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(top:200.0, left: 20),
-          child: Row(
-            textDirection: TextDirection.ltr,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Icon(Icons.call, color: Colors.red, size:30,textDirection: TextDirection.ltr,),
-              Text("Call", textDirection: TextDirection.ltr,style: TextStyle(color: Colors.red),)
-            ],
-        ),
-        ),
-      ) ,
+    return MaterialApp(
+      title: 'Flutter News',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        backgroundColor: Colors.white,
+        primaryColor: Colors.blue,
+      ),
+      home: NewScreen(articleApi: ArticleServices()),
     );
   }
 }
