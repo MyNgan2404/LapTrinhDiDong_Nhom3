@@ -27,6 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  meta: ^1.1.7
   flutter:
     sdk: flutter
 
@@ -37,8 +38,9 @@ dependencies:
   english_words: ^4.0.0
   http:
   carousel_slider: ^4.0.0
-  #flutter_rating_stars: ^1.0.3+4
+  flutter_rating_stars: ^1.0.3+4
   webview_flutter: ^2.3.0
+  font_awesome_flutter:
 
 
 dev_dependencies:
